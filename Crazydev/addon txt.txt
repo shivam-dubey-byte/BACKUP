@@ -1,0 +1,12 @@
+$ heroku addons:create simple-file-upload
+Creating simple-file-upload on ⬢ eflask-app-by-shivam... $35/month
+Thanks for using Simple File Upload. Type `heroku addons:open simple-file-upload
+` on your command line to be taken to your customized
+        dashboard. Or you can open the dashboard directly from the Resources tab
+ of your Heroku application
+Created simple-file-upload-round-46892 as SIMPLE_FILE_UPLOAD_KEY
+Use heroku addons:docs simple-file-upload to view documentation
+
+Shivam Raj Dubey@DESKTOP-6OARRBL MINGW64 /e/eflask-app-by-shivam (master)
+$ heroku config:get SIMPLE_FILE_UPLOAD_KEY
+ec282e41e90ff8b83b24d8627903fb12

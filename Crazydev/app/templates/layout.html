@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+Template Name: Gleblu
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="en-8">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>CrazyDev</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="{{url_for('static',filename='images/logo1.1.png')}}" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{{ url_for('static', filename='layout/styles/layout.css') }}" rel="stylesheet" type="text/css" media="all">
+<!-------Upload---------
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/font-awesome.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.min.css') }}">
+-------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+<script data-ad-client="ca-pub-5216182444949503" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     function message() {
+
+       alert('{{message}}')
+     }
+</script>
+  <script data-ad-client="ca-pub-5216182444949503" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <style type="text/css">
+      /* DEMO ONLY */
+      .container .demo{text-align:center;}
+      .container .demo div{padding:8px 0;}
+      .container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
+      .container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
+      @media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
+    /* DEMO ONLY */
+  </style>
+</head>
+<body id="top" onload="message()">
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <div class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <ul class="nospace">
+        <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+        <li><i class="far fa-envelope rgtspace-5"></i> crazydev@google.com</li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </div>
+    <div class="fl_right"> 
+      <!-- ################################################################################################ -->
+      <ul class="nospace">
+        <li><a href="/"><i class="fas fa-home"></i></a></li>
+        <li><a href="/Help" title="Help Centre"><i class="far fa-life-ring" onclick="message()"></i></a></li>
+        <li><a href="/sign-up" title="sign Up"><i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="/log-in" title="Log In"><i class="fas fa-edit"></i></a></li>
+        <li><a href="/logout" title="logout"><i class="fas fa-sign-out-alt"></i></a></li>
+        <li id="searchform">
+          <div>
+            <form action="/search" method="post">
+              <fieldset>
+                <legend>Search Blogs:</legend>
+                <input type="text" placeholder="Enter search term&hellip;" name='search'>
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </fieldset>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <h1><a href="/">CrazyDev</a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a class="drop" href="#">Pages</a>
+          <ul>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/full-width">Full Width</a></li>
+            <li><a href="/sidebar-left">Sidebar Left</a></li>
+            <li><a href="/sidebar-right">Sidebar Right</a></li>
+            <li><a href="/basic-grid">Basic Grid</a></li>
+            <li><a href="/font-icons">Font Icons</a></li>
+          </ul>
+        </li>
+        <!--<li><a class="drop" href="#">Dropdown</a>
+          <ul>
+            <li><a href="#">Level 2</a></li>
+            <li><a class="drop" href="#">Level 2 + Drop</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Level 2</a></li>
+          </ul>
+        </li>-->
+        <li><a href="/full-width">Blogs</a></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+</div>
+{% block body %} 
+{% endblock %}
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="heading">Contact Us</h6>
+      <ul class="nospace linklist contact btmspace-30">
+        <li><i class="fas fa-map-marker-alt"></i>
+          <address>
+          Street Name &amp; Number, Town, Postcode/Zip
+          </address>
+        </li>
+        <li><i class="fas fa-phone"></i> +91 (123) 456 7890</li>
+        <li><i class="far fa-envelope"></i> crazydev@google.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Popular_Blogs</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Porta tellus massa consectetuer sem eget pharetra ligula purus sit amet dui.</a></p>
+            <time class="block font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Commodo ornare maximus donec consectetuer adipiscing elit pellentesque habitant.</a></p>
+            <time class="block font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Important_links</h6>
+      <ul class="nospace linklist">
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/blogs">Blogs</a></li>
+        <li><a href="#">CEO</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Blogs</h6>
+      <ul class="nospace clear latestimg">
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="{{ url_for('static', filename='images/demo/100x100.png') }}" alt=""></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2022 - All Rights Reserved - <a href="#">CrazyDev</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">CrazyDev</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{{ url_for('static', filename='layout/scripts/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='layout/scripts/jquery.backtotop.js') }}"></script>
+<script src="{{ url_for('static', filename='layout/scripts/jquery.mobilemenu.js') }}"></script>
+</body>
+</html>
+

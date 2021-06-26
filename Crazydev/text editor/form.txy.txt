@@ -1,0 +1,32 @@
+    <form class="form-inline" role="form" action="#" method="post" accept-charset="utf-8" id="electroal" enctype="multipart/form-data">
+    <script>
+    function submitForm(action){
+    document.getElementById('electroal').action = action;
+    document.getElementById('electroal').submit();
+    }
+    </script>
+
+    <button type="submit" onclick="submitForm('http://localhost/ANU_ELECTRAL1/candidate/save')">Save</button>
+    <button type="submit" onclick="submitForm('http://localhost/ANU_ELECTRAL1/candidate')">Cancel</button>
+
+<div class="form-group input-xxx-x-wider">
+    <h6><strong>Description (500 max) <i class="glyphicon glyphicon-star red" ></i></strong></h6>
+        <div class="widget-main no-padding">
+            <div id="summernote"></div>
+        </div>
+    <textarea name="candidate_description"></textarea>
+</div>
+<div class="form-group input-x-wider">
+    <h6><strong>Status <i class="glyphicon glyphicon-star red" ></i></strong>| <i>Enable to use or Disable to use later </i></h6>
+    <label>
+        <input name="candidate_status" value="9" type="radio" checked="checked" class="colored-success">
+        <span class="text"> Enabled</span>
+    </label>
+    <label>
+        <input name="candidate_status" value="10" type="radio" class="colored-danger">
+        <span class="text"> Disabled</span>
+    </label>
+
+</div>
+
+</form>

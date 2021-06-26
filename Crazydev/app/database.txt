@@ -1,0 +1,6 @@
+CLEARDB_DATABASE_URL: mysql://b528934ee1d126:10ba4a00@us-cdbr-east-03.cleardb.co
+m/heroku_b9aec297bd894b9?reconnect=true\
+
+Created cleardb-colorful-18457 as CLEARDB_COBALT_URL
+Use heroku addons:docs cleardb to view documentation
+ mysql://b528934ee1d126:10ba4a00@us-cdbr-east-03.cleardb.com/heroku_b9aec297bd894b9?reconnect=true
